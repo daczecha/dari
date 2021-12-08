@@ -1,7 +1,7 @@
 import { getWeather } from './scripts/getWeather';
 import { setForecast } from './scripts/forecast';
 import { setUnit} from './scripts/unit'; 
-
+require("./css/app.css")
 
 getWeather('London');
 
