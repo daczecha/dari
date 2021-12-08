@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Courier, monospace;
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+}
+
+.button-unit-container{
+    display: flex;
+    margin:0 0 20px 0;
+    gap:0;
+}
+
+.unit-button{
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    cursor:pointer;
+}
+
+.unit-active{
+    background-color: black;
+    color:white;
+}
+
+
+.brief-information{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input{
+    padding: 5px 10px;
+    outline: none;
+    border:1px solid gray;
+    border-radius: 15px;
+}
+
+.container{
+    background-color:rgba(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:2.9em 4em;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    gap:20px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-image{
+    display: block;
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    object-fit: cover;
+    overflow:hidden;
+
+}
+
+#location_img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.4);
+}
+
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap:20px;
+}
+
+#forecast{
+    width: 80%;
+    max-width: 80%;
+    display: flex;
+    overflow-x: auto;
+    gap:20px;
+    justify-content: start;
+}
+
+.forecast-card{
+    width: 200px;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border:1px solid lightgray;
+    gap:20px;
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    flex: 1 0 auto;
+
+}
+
+.forecast-button{
+    border:0;
+    outline:0;
+    background: transparent;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-bottom: 2px solid lightgray;
+}
+
+.forecast-active{
+    border-bottom: 2px solid black;
+}
+
+.forecast-temp{
+    display: flex;
+}
+.night-temperature{
+    padding: 0 0 0 10px;
+    opacity:.4;
+}
+
+.forecast-image{
+    width:70px;
+}
+
+.footer{
+    margin-top:50px;
+
+}
+
+.hide{
+    display: none;
+}
+
+
+#loading{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src//css/app.css">
+    <title>Dari</title>
+</head>
+<body>
+    <div id="loading">
+        Loading...
+    </div>
+    <div id="app" class="hide">
+
+        <div class="brief-information">
+            <div class="button-unit-container">
+                <button class='unit-button unit-active' id="unit_celsius">°C</button>
+                <button class="unit-button" id="unit_fahrenheit">°F</button>
+            </div>
+            <div class="container">
+                <div class="search">
+                    <input 
+                        type="text" 
+                        name="location" 
+                        id="search_location" 
+                        placeholder="Search for places..."
+                        >
+                </div>
+                <div class="info">
+                    <img 
+                        id="current_weather_icon"
+                    >
+                    <p style="font-size: 20px" id = "location_name"></p>
+                    <h1 id="current_temp"></h1>
+                    <h5 id="current_date">
+                        <span id="current_day"></span>
+                        <span id="current_time"></span>
+                    </h5>
+                    <p id="weather_description"></p>
+                    <p id="feels_like"></p>
+                </div>
+            </div>
+
+            <div class="location-image">
+                <img id="location_img" src="" alt="City Image">
+            </div>
+        </div>
+        <div class="main">
+            <div class="buttons">
+                <div class="button mode">
+                    <button class ='forecast-button forecast-active' id="forecast_daily">Daily</button>
+                    <button class ='forecast-button' id="forecast_hourly">Hourly</button>
+                </div>
+            </div>
+            <div id="forecast">
+
+            </div>
+            <div class="footer">
+                made by <a href = "github.com/daczecha">daczecha</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.bundle.js"></script>
+</html>
